@@ -28,6 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: download calyptia cli
         run: |
+          apt-get install tar
           curl -sSfL https://github.com/calyptia/cli/releases/download/v1.4.4/cli_1.4.4_linux_amd64.tar.gz | tar -xz -
 
       # Runs a set of commands using the runners shell
